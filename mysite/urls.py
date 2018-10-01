@@ -15,7 +15,7 @@ Including another URLconf
 """
 
 
-from django.conf.urls import url
+from django.conf.urls import url,   include # include('bookmark.urls') 함수
 from django.contrib import admin
 
 # URL 패턴에 따라 뷰를 호출할 예정(아직 해당 뷰 코드는 작성 전 상태)
@@ -31,5 +31,6 @@ urlpatterns = [
     # /bookmark/ 요청을 처리할 뷰 클래스를 BookmarkLV로 지정하고, URL 패턴 이름 지정
     url(r'^bookmark/$', BookmarkLV.as_view(), name='index'),  # 1
     url(r'^bookmark/(?P<pk>\d+)/$', BookmarkDV.as_view(), name='detail'),  # 2
+    url(r'^admin/', admin.site.urls), url(r'', include('bookmark.urls')),  # 원래 있던 내용을 모두 bookmark/urls.py 파일로 옮기자.
 
 ]
