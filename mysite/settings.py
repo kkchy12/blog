@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bookmark.apps.BookmarkConfig',     # bookmark 앱을 추가 등록
+    'blog.apps.BlogConfig',              # blog 앱을 추가 등록
 ]
 
 MIDDLEWARE = [
