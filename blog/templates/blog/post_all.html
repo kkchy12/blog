@@ -37,14 +37,14 @@
 {#            has_previous, has_next, previous_page_number, next_page_number,#}
 {#            number, pagenator.num_pages 속성을 가짐-->#}
             {% if page_obj.has_previous %}
-                <!--링크 형식 href="?page={{ page_obj.previous_page_number }}"에 주목-->
+{#                <!--링크 형식 href="?page={{ page_obj.previous_page_number }}"에 주목-->#}
                 <a href="?page={{ page_obj.previous_page_number }}">이전 페이지</a>
             {% endif %}
 
             페이지 {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
 
             {% if page_obj.has_next %}
-                <!--링크 형식 href="?page={{ page_obj.previous_page_number }}"에 주목-->
+{#                <!--링크 형식 href="?page={{ page_obj.previous_page_number }}"에 주목-->#}
                 <a href="?page={{ page_obj.next_page_number }}">다음 페이지</a>
             {% endif %}
         </span>
