@@ -6,8 +6,8 @@
 </head>
 <body>
 <!--특별한 HTML 태그 지정이 없으면 장고가 <body> </body> 영역으로 간주함-->
-<!--아래에서 object 객체는 PostDV 클래스 형 뷰에서
-컨텍스트 변수로 넘겨주는 Post 클래스의 특정 객체-->
+<!--&lt;!&ndash;아래에서 object 객체는 PostDV 클래스 형 뷰에서-->
+<!--컨텍스트 변수로 넘겨주는 Post 클래스의 특정 객체&ndash;&gt;-->
 
 <!--object.title을 H2 요소로 출력 -->
 <h2>{{ object.title }}</h2>
@@ -38,9 +38,10 @@
 <br/>
 
 <div class="body">
-    <!--object.content를 파이프(|)를 통하여 linebreaks 탬플릿 필터로 처리하여
-     개행문자'\n'를 인식하도록 조치함-->
+    <!--&lt;!&ndash;object.content를 파이프(|)를 통하여 linebreaks 탬플릿 필터로 처리하여-->
+     <!--개행문자'\n'를 인식하도록 조치함&ndash;&gt;-->
     {{ object.content|linebreaks }}
 </div>
+
 </body>
 </html>
