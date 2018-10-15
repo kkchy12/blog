@@ -31,7 +31,7 @@ class Post(models.Model):
   class Meta:  # 필드 속성 외에 필요한 파라미터를 Meta 내부 클래스로 정의
       verbose_name = '기사'              # 'post'
       verbose_name_plural = '기사 모음'  # 'posts'
-      db_table  = 'my_post'           # DB에 저장할 테이블 이름을 my_posts'라고 지정
+      db_table  = 'my_posts'           # DB에 저장할 테이블 이름을 my_posts'라고 지정
                                        # 기본값(앱이름_모델클래스이름)은 'blog_post'
       ordering  = ('-modify_date',)  # 최종 수정 일시의 내림차순 정렬
 
