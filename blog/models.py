@@ -1,4 +1,3 @@
-# 문자열 처리 방식이 상이한 파이썬 버전 2 및 3의 호환성을 위한 임포트
 from __future__ import unicode_literals
 from django.utils.encoding import python_2_unicode_compatible
 
