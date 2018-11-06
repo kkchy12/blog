@@ -42,3 +42,7 @@ a:visited{
 
 .centered { text-align: center;}
 .leftpadding30percent { padding-left: 30%; }
+
+h1 {
+    text-align: center;
+}
