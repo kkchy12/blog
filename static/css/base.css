@@ -11,7 +11,7 @@ div#header {
   height: 30px;
   width: 100%;
   display: table;
-  background: orange;
+  background: #5858FA;
 }
 
 div#menu {
@@ -23,7 +23,7 @@ div#menu {
   display: table;
   table-layout: fixed;
   border-spacing: 40px 0px;
-  background: #ffa;
+  background: #EFF2FB;
   font-size: 8px;
 }
 
@@ -48,7 +48,7 @@ div#footer {
   display: table-cell;
   vertical-align: middle;
   padding-left: 20px;
-  color: #ffc;
+  color:#EFF2FB;
   font-weight: bold;
   font-size: 16px;
 }
@@ -58,7 +58,7 @@ div#footer {
   vertical-align: middle;
   text-align: right;
   padding-right: 20px;
-  color: #ffc;
+  color: #EFF2FB;
   font-weight: normal;
   font-size: 12px;
 }
