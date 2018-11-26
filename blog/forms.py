@@ -11,7 +11,7 @@ class PostSearchForm(forms.Form):
     search_word = forms.CharField(label='검색어', required=False)
 
     # 추가 검색어
-    search_title = forms.CharField(label='\n제목 검색어', required=False)
+    search_title = forms.CharField(label='제목 검색어', required=False)
     search_description = forms.CharField(label='요약 검색어', required=False)
     search_content = forms.CharField(label='내용 검색어', required=False)
     search_tag = forms.CharField(label='태그 검색어', required=False)
