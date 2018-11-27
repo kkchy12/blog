@@ -109,25 +109,25 @@ class SearchFormView(FormView):
 	        Q(tag__icontains=schWord)
         ).distinct()
 
-        my_post_list = []
+        detail_list = []
 
         if schTitle :
-            my_post_list += Post.objects.filter(
+            detail_list += Post.objects.filter(
                 Q(title__icontains=schTitle)
             ).distinct()
 
         if schDescription :
-            my_post_list += Post.objects.filter(
+            detail_list += Post.objects.filter(
                 Q(description__icontains=schDescription)
             ).distinct()
 
         if schContent :
-            my_post_list += Post.objects.filter(
+            detail_list += Post.objects.filter(
                 Q(content__icontains=schContent)
             ).distinct()
 
         if schTag :
-            my_post_list += Post.objects.filter(
+            detail_list += Post.objects.filter(
                 Q(tag__icontains=schTag)
             ).distinct()
 
@@ -136,12 +136,12 @@ class SearchFormView(FormView):
         context['form'] = form  # 여기서 form은 PostSearchForm을 지칭함
         context['search_term'] = schWord
         context['object_list'] = post_list
-        # 개별 검색 3/
+
         context['search_title'] = schTitle
         context['search_description'] = schDescription
         context['search_content'] = schContent
         context['search_tag'] = schTag
-        context['my_object_list'] = my_post_list
+        context['my_object_list'] = detail_list
 
         return render(self.request, self.template_name, context)
 # ch09 추가 1/1 종료
